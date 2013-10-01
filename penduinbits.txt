@@ -1,0 +1,38 @@
+-----------------
+about PENDUINBITS
+-----------------
+
+Not that anyone would be fooled, but just to be clear, penduinbits is
+me.  One guy who likes Free software, likes to make toys, and whose
+single marketable skill is software programming.
+
+I use the handle "penduin", because it's a cool slight mispronounciation
+of "penguin", an oddball sort of animal to which I don't have any special
+connection, other than my fondness for Linux and all its GNU
+surroundings.  I use the name "penduinbits" in place of a company or
+organization where such identifiers are expected, and it's pretty
+accurate.  The stuff I create and/or show off and/or distribute and/or
+sell is going to be made of bits, most likely.  I can scribble some
+amusing pictures, but I'm no artist.  I can cobble together simple
+music, but I'm no musician.  I make bits.  I arrange digital information
+into bit patterns with which people can (I hope) have fun.
+
+
+----------------------
+about Halloween Artist
+----------------------
+
+I always loved carving jack-o-lanterns for Halloween.  I also love WebOS,
+and got a TouchPad during that tiny window before HP decided it hated
+success and discontinued it.  I thought it would be fun to have an app to
+draw a face on a pumpkin and have it simulate the scooping out, carving,
+and lighting.  You know, the messy parts.  I could try out lots of ideas
+before committing to a design, not to mention it would be a great excuse
+to learn about HTML5 canvas.
+
+I banged out the app quickly, and it's still available for download in the
+HP App Catalog.  But times change, WebOS has fewer and fewer users, and I
+have come to love FirefoxOS as well.  So, I've retooled the Enyo1 WebOS
+application into a general-purpose web app.  Other features like saving
+and undo may return someday, but for the initial release I just want it
+to fit and work well on a FirefoxOS phone and any web browser.

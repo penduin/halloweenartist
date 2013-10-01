@@ -1,0 +1,121 @@
+<html>
+ <head>
+<meta name="appsfuel_code" content="96d92b21c085154"/>
+  <link rel="icon" type="image/png" href="icon64.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Halloween Artist</title>
+  <script src="script/install.js" type="text/javascript"></script>
+  <script src="script/halloweenartist.js" type="text/javascript"></script>
+  <style>
+   body {
+    margin: 0;
+    background: black;
+    font-family: sans-serif, sans, helvetica, arial;
+    color: yellow;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   }
+   #loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    text-align: center;
+    font-size: 200%;
+    text-shadow: purple 0 0 32px, purple 0 0 16px, purple 0 0 8px;
+   }
+   canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+   }
+   .fade {
+    transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+   }
+   .fade.out {
+    opacity: 0;
+   }
+   #buttons {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+   }
+   #buttons span {
+    cursor: pointer;
+    font-size: 110%;
+    width: 4em;
+    padding: 0.4em;
+    border: 0.1em solid brown;
+    border-radius: 0.5em;
+    background: orange;
+    color: black;
+    text-shadow: yellow 0 0 8px, yellow 0 0 4px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, orange, yellow, brown, orange);
+   }
+   #buttons.stack span {
+    display: block;
+   }
+   #buttons.center {
+    text-align: center;
+    left: 8px;
+   }
+   #buttons span:active {
+    text-shadow: orange 0 0 8px, orange 0 0 4px;
+    background: brown;
+    background-image: linear-gradient(to bottom, brown, orange, black, brown);
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+   }
+   .hidden {
+    display: none;
+   }
+  </style>
+ </head>
+ <body>
+  <div id="content" class="hidden">
+   <canvas id="template"></canvas>
+   <canvas id="bg"></canvas>
+   <canvas id="flicker" class="fade"></canvas>
+   <canvas id="draw"></canvas>
+   <div id="buttons">
+    <span id="carve">Carve</span>
+    <span id="allclear">Clear</span>
+    <span id="switch">Switch</span>
+   </div>
+  </div>
+  <div id="loading">Loading...</div>
+  <div class="hidden">
+   <img id="glow" src="image/glow.jpg">
+   <img id="flesh" src="image/flesh.jpg">
+   <img id="flick" src="image/flicker.jpg">
+   <img id="candle1" src="image/candle.png">
+   <img id="candle2" src="image/candle-bright.png">
+   <img id="white" src="image/white.png">
+   <img id="pumpkin1" src="image/pumpkin1.jpg">
+   <img id="pumpkin2" src="image/pumpkin2.jpg">
+   <img id="pumpkin3" src="image/pumpkin3.jpg">
+   <img id="pumpkin4" src="image/pumpkin4.jpg">
+   <img id="mask1" src="image/mask1.png">
+   <img id="mask2" src="image/mask2.png">
+   <img id="mask3" src="image/mask3.png">
+   <img id="mask4" src="image/mask4.png">
+   <img id="fullmask1" src="image/fullmask1.png">
+   <img id="fullmask2" src="image/fullmask2.png">
+   <img id="fullmask3" src="image/fullmask3.png">
+   <img id="fullmask4" src="image/fullmask4.png">
+   <canvas id="scratch">
+   <canvas id="saveSquare">
+  </div>
+ </body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"version": "1.4.0d",
+	"name": "Halloween Artist",
+	"launch_path": "/index.html",
+	"description": "Carve a virtual pumpkin!",
+	"icons": {
+ 		"30": "/icon30.png",
+ 		"36": "/icon36.png",
+ 		"48": "/icon48.png",
+ 		"60": "/icon60.png",
+ 		"64": "/icon64.png",
+ 		"128": "/icon128.png",
+		"256": "/icon256.png"
+	},
+	"developer": {
+		"name": "penduinbits",
+		"url": "http://penduin.net"
+	},
+	"installs_allowed_from": [
+		"http://halloweenartist.penduin.net",
+		"https://halloweenartist.penduin.net",
+		"https://marketplace.firefox.com"
+	],
+	"default_locale": "en",
+	"appcache_path": "/cache.manifest"
+}

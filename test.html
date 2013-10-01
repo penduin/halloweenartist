@@ -1,0 +1,44 @@
+<html>
+ <head>
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, user-scalable=no" />
+  <style>
+   #buttons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+   }
+   #buttons span {
+    font-size: 110%;
+//    width: 4em;
+//    margin: 0.1em;
+    padding: 0.4em;
+    border: 0.1em solid brown;
+    border-radius: 0.5em;
+    background: orange;
+    color: black;
+    text-shadow: yellow 0 0 8px, yellow 0 0 4px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, orange, yellow, brown, orange);
+   }
+   #buttons.stack span {
+    display: block;
+   }
+   #buttons span:active {
+    text-shadow: orange 0 0 8px, orange 0 0 4px;
+    background: brown;
+    background-image: linear-gradient(to bottom, brown, orange, black, brown);
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+   }
+  </style>
+ </head>
+ <body>
+  <div id="buttons">
+   <span id="carve">Carve</span>
+   <span id="allclear">Clear</span>
+   <span id="switch">Switch</span>
+  </div>
+ </body>
+</html>
