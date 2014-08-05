@@ -1,4 +1,8 @@
 window.addEventListener("DOMContentLoaded", function () {
+	if(window.location.host !== "halloweenartist.penduin.net") {
+		return;
+	}
+
 	var installUrl = null;
 	if(navigator.mozApps) {
 		var request = navigator.mozApps.getSelf();
