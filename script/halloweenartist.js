@@ -360,3 +360,5 @@ window.addEventListener("load", function () { //document, "DOMContentLoaded"
 		}, 20);
 	});
 });
+
+document.addEventListener("touchstart", function(){}, true);
