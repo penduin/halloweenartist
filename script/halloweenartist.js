@@ -50,11 +50,14 @@ function resize() {
 					  0, 0, canv.width, canv.height,
 					  0, 0, temp.width, temp.height);
 
+		/* snarl. this shit doesn't work.
+		   why can't mobile canvas pixels just be pixels?
 		var scaleFactor = backingScale(ctx);
 		if(scaleFactor > 1) {
 			size = size* scaleFactor;
 			canv.style.scale = 1 / scaleFactor;
 		}
+		*/
 
 		// resize and reposition
 		canv.width = size;
