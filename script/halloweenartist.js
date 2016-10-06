@@ -50,6 +50,11 @@ function resize() {
 					  0, 0, canv.width, canv.height,
 					  0, 0, temp.width, temp.height);
 
+		var scaleFactor = backingScale(ctx);
+		if(scaleFactor > 1) {
+			size = size* scaleFactor;
+		}
+
 		// resize and reposition
 		canv.width = size;
 		canv.height = size;
@@ -361,4 +366,24 @@ window.addEventListener("load", function () { //document, "DOMContentLoaded"
 	});
 });
 
+// hacks for dumb modern mobile browsers
 document.addEventListener("touchstart", function(){}, true);
+function backingScale(context) {
+	if('devicePixelRatio' in window) {
+		if (window.devicePixelRatio > 1) {
+			return window.devicePixelRatio;
+		}
+	}
+	return 1;
+}
+/*
+var can = document.getElementById("myCanvas");
+var ctx = can.getContext("2d");
+var scaleFactor = backingScale(ctx);
+if(scaleFactor > 1) {
+	can.width = can.width * scaleFactor;
+	can.height = can.height * scaleFactor;
+    // update the context for the new canvas scale
+	var ctx = can.getContext("2d");
+}
+*/
