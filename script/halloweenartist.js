@@ -53,6 +53,7 @@ function resize() {
 		var scaleFactor = backingScale(ctx);
 		if(scaleFactor > 1) {
 			size = size* scaleFactor;
+			canv.style.scale = 1 / scaleFactor;
 		}
 
 		// resize and reposition
