@@ -52,7 +52,7 @@ function resize() {
 
 		/* snarl. this shit doesn't work.
 		   why can't mobile canvas pixels just be pixels?
-		var scaleFactor = backingScale(ctx);
+		var scaleFactor = window.devicePixelRatio || 1;
 		if(scaleFactor > 1) {
 			size = size* scaleFactor;
 			canv.style.scale = 1 / scaleFactor;
@@ -104,6 +104,9 @@ function clear() {
 	resize();
 	reset();
 	HA.virgin = true;
+
+	var link = document.getElementById("save");
+	link.href = "#";
 }
 
 // drawing functions
@@ -314,6 +317,9 @@ function carve(fromTemplate) {
 	face.width = face.width;
 	HA.virgin = true;
 	animateFlicker();
+
+	var link = document.getElementById("save");
+	link.href = dest.toDataURL("image/jpeg", 1.0);
 }
 
 
@@ -368,26 +374,10 @@ window.addEventListener("load", function () { //document, "DOMContentLoaded"
 			status.className = "hidden";
 		}, 20);
 	});
+	document.getElementById("savebtn").addEventListener("click", function() {
+		document.getElementById("save").click();
+	});
 });
 
 // hacks for dumb modern mobile browsers
 document.addEventListener("touchstart", function(){}, true);
-function backingScale(context) {
-	if('devicePixelRatio' in window) {
-		if (window.devicePixelRatio > 1) {
-			return window.devicePixelRatio;
-		}
-	}
-	return 1;
-}
-/*
-var can = document.getElementById("myCanvas");
-var ctx = can.getContext("2d");
-var scaleFactor = backingScale(ctx);
-if(scaleFactor > 1) {
-	can.width = can.width * scaleFactor;
-	can.height = can.height * scaleFactor;
-    // update the context for the new canvas scale
-	var ctx = can.getContext("2d");
-}
-*/
