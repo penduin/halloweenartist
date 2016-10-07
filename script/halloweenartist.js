@@ -106,7 +106,7 @@ function clear() {
 	HA.virgin = true;
 
 	var link = document.getElementById("save");
-	link.href = "#";
+	link.href = "";
 }
 
 // drawing functions
