@@ -1,9 +1,11 @@
 CACHE MANIFEST
-# v1.4.0d - 2013-08-30
+# v2.0 - 2016-10-07
 LICENSE
 penduinbits.txt
 index.html
+icon512.png
 icon256.png
+icon192.png
 icon128.png
 icon64.png
 icon60.png
