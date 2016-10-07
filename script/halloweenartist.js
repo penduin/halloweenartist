@@ -106,7 +106,7 @@ function clear() {
 	HA.virgin = true;
 
 	var link = document.getElementById("save");
-	link.href = "";
+	link.href = "image/pumpkin" + HA.bg + ".jpg";
 }
 
 // drawing functions
@@ -319,7 +319,7 @@ function carve(fromTemplate) {
 	animateFlicker();
 
 	var link = document.getElementById("save");
-	link.href = dest.toDataURL("image/jpeg", 1.0);
+	link.href = dest.toDataURL("image/jpeg", 0.85);
 }
 
 
